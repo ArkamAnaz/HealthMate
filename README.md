@@ -11,18 +11,6 @@ health activities: **steps walked, calories burned and water intake**.
 - **Settings** – save daily goals for steps, calories burned and water intake (validated, stored with SharedPreferences, "Reset to defaults")
 - **Local SQLite database** with 30 days of dummy records created on first launch
 
-## Tech stack
-
-| Item | Choice |
-|---|---|
-| Language | Kotlin |
-| UI | Jetpack Compose + Material 3 |
-| Architecture | MVVM (feature-based packages) |
-| State management | ViewModel + Kotlin `StateFlow` / Compose state |
-| Database | SQLite via Android `SQLiteOpenHelper` (table `health_records`); daily goals in SharedPreferences |
-| Navigation | Navigation Compose |
-| Async | Kotlin Coroutines (`Dispatchers.IO` for database work) |
-| Testing | JUnit 4 unit tests |
 
 ## Project structure
 
